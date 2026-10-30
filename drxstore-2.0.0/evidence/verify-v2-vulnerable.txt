@@ -1,0 +1,20 @@
+target : http://127.0.0.1:8903
+app    : /tmp/drx-v2
+expect : vulnerable
+
+staff session: staff1, admin_role='staff'
+  ?p=users      -> 200  REACHED
+  ?p=settings   -> 200  REACHED
+  ?p=sw_update  -> 200  REACHED
+  escalate          -> role in store: admin
+  updater upload    -> accepted=True  file_written=True  executed=True
+  admin regression  -> pages_200=True  can_create_user=True
+
+============================================================
+  REACHED  1. admin pages reachable by staff
+  REACHED  2. staff can promote itself to admin
+  REACHED  3. arbitrary PHP written and executed
+============================================================
+observed: vulnerable   expected: vulnerable
+
+RESULT: as expected. Control confirmed.

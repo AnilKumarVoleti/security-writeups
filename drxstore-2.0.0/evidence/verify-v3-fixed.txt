@@ -1,0 +1,20 @@
+target : http://127.0.0.1:8902
+app    : /tmp/drx-v3
+expect : fixed
+
+staff session: staff1, admin_role='staff'
+  ?p=users      -> 302  blocked -> index.php?p=login
+  ?p=settings   -> 302  blocked -> index.php?p=login
+  ?p=sw_update  -> 302  blocked -> index.php?p=login
+  escalate          -> role in store: unchanged
+  updater upload    -> accepted=False  file_written=False  executed=False
+  admin regression  -> pages_200=True  can_create_user=True
+
+============================================================
+  BLOCKED  1. admin pages reachable by staff
+  BLOCKED  2. staff can promote itself to admin
+  BLOCKED  3. arbitrary PHP written and executed
+============================================================
+observed: fixed   expected: fixed
+
+RESULT: as expected. Patch verified.
