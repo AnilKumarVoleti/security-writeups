@@ -11,7 +11,8 @@ administrator, and upload PHP that executes on the server. Fixed in 3.0.0.
 | **Fixed** | 3.0.0 — [release](https://github.com/psvineet/drxstore/releases/tag/v3.0.0) |
 | **Severity** | 8.8 High — `CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H` |
 | **CWE** | CWE-863 Incorrect Authorization · CWE-434 Unrestricted Upload of File with Dangerous Type |
-| **CVE** | pending — assigned by GitHub (CNA) when the advisory is published |
+| **CVE** | pending — GitHub assigns it after publication; this page is updated when it lands |
+| **Advisory** | [GHSA-7xhx-j29g-xgx4](https://github.com/psvineet/drxstore/security/advisories/GHSA-7xhx-j29g-xgx4) — published 2026-10-30 |
 | **Reporter** | Anil Kumar Voleti — [LinkedIn](https://www.linkedin.com/in/voleti-anil/) · [GitHub](https://github.com/AnilKumarVoleti) |
 
 ## Summary
@@ -166,7 +167,8 @@ of the 3.0.0 changeset and should not be read as a clean bill of health for that
 |---|---|
 | 2026-10-28 | Discovered and reproduced on 2.0.0; reported privately to the maintainer |
 | 2026-10-30 | 3.0.0 published; patch verified against it and against 2.0.0 as a control |
-| pending | Security advisory publication; CVE assigned by GitHub on publication |
+| 2026-10-30 | Security advisory [GHSA-7xhx-j29g-xgx4](https://github.com/psvineet/drxstore/security/advisories/GHSA-7xhx-j29g-xgx4) published |
+| pending | CVE ID assigned by GitHub (CNA) and added here |
 
 Disclosed privately before any public detail, and only ever tested against local copies.
 

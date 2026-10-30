@@ -4,7 +4,7 @@ Independent vulnerability research, published after coordinated disclosure with 
 
 | Advisory | Product | Severity | Status |
 |---|---|---|---|
-| [DRXStore 2.0.0 — broken authorization to remote code execution](drxstore-2.0.0/) | DRXStore (PHP, self-hosted pharmacy system) | 8.8 High | fixed in 3.0.0, CVE pending |
+| [DRXStore 2.0.0 — broken authorization to remote code execution](drxstore-2.0.0/) | DRXStore (PHP, self-hosted pharmacy system) | 8.8 High | fixed in 3.0.0 · [GHSA-7xhx-j29g-xgx4](https://github.com/psvineet/drxstore/security/advisories/GHSA-7xhx-j29g-xgx4) · CVE pending |
 
 Each directory contains the write-up, the proof-of-concept scripts, the raw evidence and the
 verification of the fix. Every report here was produced against a local installation only, disclosed
